@@ -5,9 +5,9 @@ namespace Girlz.Controllers
 {
     public class LineWebHookController : LineWebHookControllerBase
     {
-        [Route("api/LineBotWebHook")]
+        [Route("api/LineBot")]
         [HttpPost]
-        public IActionResult POST()
+        public IActionResult Post()
         {
             var AdminUserId = "U81025e615f2b5734e31d2715303acb5a";
 
@@ -18,10 +18,8 @@ namespace Girlz.Controllers
 
                 // create bot instance
                 var bot = new Bot(this.ChannelAccessToken);
-                // show ladding animation
+                // show loading animation
                 var ret = bot.DisplayLoadingAnimation(AdminUserId, 15);
-                // display the result
-                Console.Write(ret);
 
                 //配合Line Verify
                 if (ReceivedMessage.events == null || ReceivedMessage.events.Count() <= 0 ||
