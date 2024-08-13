@@ -1,4 +1,4 @@
-# 2024.GirlzTechIn
+# 2024.GirlzTechIn.LineBot&ChatGPT
 ## 參考網址
 [在 LINE Developers 上建立 LINE Bot](https://datasciocean.tech/others/create-line-bot/)
 
